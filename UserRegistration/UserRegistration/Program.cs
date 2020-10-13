@@ -6,7 +6,6 @@ namespace User_Registration_Problem
     {
         static void Main(string[] args)
         {
-            //Welcome msg
             Console.WriteLine("Welcome to the User Registration Problem!");
             ValidateUserRegistration validateUserRegistration = new ValidateUserRegistration();
             Console.WriteLine("Enter your first name : ");
@@ -21,6 +20,10 @@ namespace User_Registration_Problem
             string eMail = Console.ReadLine();
             bool eMailResult = validateUserRegistration.ValidateEmail(eMail);
             validateUserRegistration.PrintResult(eMailResult);
+            Console.WriteLine("Enter your mobile number : ");
+            string mobileNo = Console.ReadLine();
+            bool mobileNoResult = validateUserRegistration.ValidateMobileNo(mobileNo);
+            validateUserRegistration.PrintResult(mobileNoResult);
         }
     }
 }
