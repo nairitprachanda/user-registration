@@ -24,7 +24,7 @@ namespace User_Registration_Problem
             string mobileNo = Console.ReadLine();
             bool mobileNoResult = validateUserRegistration.ValidateMobileNo(mobileNo);
             validateUserRegistration.PrintResult(mobileNoResult);
-            Console.WriteLine("Enter your passowrd : ");
+            Console.WriteLine("Enter your password : ");
             string password = Console.ReadLine();
             bool passwordResult = validateUserRegistration.ValidatePassword(password);
             validateUserRegistration.PrintResult(passwordResult);
